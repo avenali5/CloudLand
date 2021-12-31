@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudLand | Software Factory</title>
+    <link rel="stylesheet/less" type="text/css" href="./style.less" />
+    <link rel="shortcut icon" href="./assets/imgs/logo-small.svg" type="image/x-icon">
+</head>
+<body>
+
+    <!-- header -->
+    <header class="whole-header-container">
+        <section class="header-container flex max-width relative">
+            <div class="logo">
+                <img class="small" src="./assets/imgs/logo-small.svg" alt="">
+                <img class="big" src="./assets/imgs/logo-big.svg" alt="">
+            </div>
+            <nav class="flex menu">
+                <div class="nav-logo">
+                    <img class="small" src="./assets/imgs/logo-small.svg" alt="">
+                </div>
+                <div class="language">
+                    <input type="radio" name="lang" id="ES">
+                    <label for="ES">ES</label>
+                    <input type="radio" name="lang" id="EN" checked>
+                    <label for="EN">EN</label>
+                </div>
+                <a href="">Who we are</a>
+                <a href="">What we do</a>
+                <a href="">Life</a>
+                <a href="" class="main-button">Say Hi!</a>
+                <div class="close" onclick="closeMenu()">
+                    <img src="./assets/icons/icon-close.svg" alt="close">
+                </div>
+            </nav>
+            <div class="burguer" onclick="openMenu()">
+                <img src="./assets/icons/icon-burguer.svg" alt="menu">
+            </div>
+        </section>
+    </header>
+
+    <!-- hero -->
+    <section class="whole-hero-container">
+        <section class="hero-container max-width flex relative">
+            <div class="info-container">
+                <h1 class="title">Hey <br>We are <br>CloudLand</h1>
+                <p>We provide IT solutions for companies that choose to obtain a digital transformation to improve the internal experience and that of their clients.</p>
+                <a href="" class="main-button">Contact us</a>
+            </div>
+            <div class="graphic-container absolute">
+                <img  src="./assets/imgs/hero-graphic-phone.svg" alt="cloud-bubbles">
+            </div>
+        </section>
+    </section>
+
+    <section class="whole-who-we-are-container">
+        <section class="who-we-are-container flex relative max-width">
+            <img class="main-img" src="./assets/imgs/who-we-are.jpg" alt="girls-smiling">
+            <div class="info-container">
+                <span class="subtitle">Who we are</span>
+                <h2 class="title">A team that is passionate about challenges</h2>
+                <p>We believe in meaningful and well-crafted digital experiences that create a positive impact in people’s life. </p>
+                <a class="flex second-button" href="">Get to know us <img src="./assets/icons/icon-down-arrow.svg"></a>
+            </div>
+        </section>
+    </section>
+    
+<script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
+<script src="./app.js"></script>
+</body>
+</html>
